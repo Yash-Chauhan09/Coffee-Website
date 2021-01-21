@@ -1,0 +1,47 @@
+ <script src="js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
+  <script>
+    $('.number').counterUp({
+     delay: 10,
+     time: 1000
+ });
+ $(document).ready(function(){
+     $('.mainContainer__hero').waypoint(function(direction){
+         $('.mainContainer__hero').addClass('animated zoomIn')
+     },{
+       offset:'100px'
+     })
+     $('.secondContainer__left').waypoint(function(direction){
+         $('.secondContainer__left').addClass('animated slideInLeft')
+     },{
+       offset:'400px'
+     })
+     $('.secondContainer__right').waypoint(function(direction){
+         $('.secondContainer__right').addClass('animated slideInRight')
+     },{
+       offset:'400px'
+     })
+     $('.mainContainer4__flex-first').waypoint(function(direction){
+         $('.mainContainer4__flex-first').addClass('animated slideInLeft')
+     },{
+       offset:'400px'
+     })
+     $('.mainContainer4__flex-second').waypoint(function(direction){
+         $('.mainContainer4__flex-second').addClass('animated slideInUp')
+     },{
+       offset:'400px'
+     })
+     $('.mainContainer4__flex-third').waypoint(function(direction){
+         $('.mainContainer4__flex-third').addClass('animated slideInRight')
+     },{
+       offset:'400px'
+     })
+     $('.contact').waypoint(function(direction){
+         $('.contact').addClass('animated zoomIn')
+     },{
+       offset:'400px'
+     })
+ });
+   </script>
